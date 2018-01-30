@@ -1,0 +1,30 @@
+{
+  "name": "exo-conflits",
+  "version": "1.0.0",
+  "description": "Exercice sur les conflits",
+  "main": "bin/run.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "lint": "eslint bin test",
+    "lint:fix": "eslint --fix src test",
+    "test": "tap test/*.js && npm run lint",
+    "test:coverage": "tap test/*.js --cov && npm run lint"
+  },
+  "author": "Eric HENRY",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/e-henry/exo-conflits.git"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "eslint": "^4.14.0",
+    "eslint-config-usecases": "^1.2.2",
+    "tap": "^11.0.1"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0"
+  }
+}
